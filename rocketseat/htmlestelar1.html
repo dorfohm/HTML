@@ -1,92 +1,108 @@
 <!DOCTYPE html>
-<!-- comentário 1 -->
-<h1>
-    Título 1
-</h1>
-<input type="text">
-<img src="img1.PNG" alt="imagem não carregada">
-<a href="https://www.github.com/" link title="link para o github">github</a>
-<div class="teste1" contenteditable="true">
-    teste
-</div>
-<div class="teste1" data-edicao1 id="nome1">
-    <!-- id não se repete o nome, class pode repetir-->
+<html lang="pt-BR">
 
-</div>
-<div class="teste1" hidden style="color: aqua;">
-    asdadad
-</div>
+<head>
+    <!-- codificação de caracteres especiais-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- portabilidade para dispositivos móveis-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo que aprendi</title>
+</head>
 
-<div tabindex="1">
-    <!-- tabindex para navegar com tab -->
-    asdadad
-</div>
-<div tabindex="2">
-    asdadad
-</div>
-<div tabindex="3">
-    asdadad
-</div>
-<div title="definir um titulo em cima de algo">
-    teste
-</div>
+<body>
+    <!-- comentário 1 -->
+    <h1>
+        Título 1
+    </h1>
+    <input type="text">
+    <img src="img1.PNG" alt="imagem não carregada">
+    <a href="https://www.github.com/" link title="link para o github">github</a>
+    <div class="teste1" contenteditable="true">
+        teste
+    </div>
+    <div class="teste1" data-edicao1 id="nome1">
+        <!-- id não se repete o nome, class pode repetir-->
 
-<!-- Aninhamento de tags, usar mais de uma tag -->
-<div>
+    </div>
+    <div class="teste1" hidden style="color: aqua;">
+        asdadad
+    </div>
+
+    <div tabindex="1">
+        <!-- tabindex para navegar com tab -->
+        asdadad
+    </div>
+    <div tabindex="2">
+        asdadad
+    </div>
+    <div tabindex="3">
+        asdadad
+    </div>
+    <div title="definir um titulo em cima de algo">
+        teste
+    </div>
+
+    <!-- Aninhamento de tags, usar mais de uma tag -->
+    <div>
+        <p>
+            <!-- tag pai -->
+            Vou <em>escrever</em> um parágrafo
+            <!-- sublinhar <em> -->
+            <!-- tag filha -->
+        </p>
+    </div>
+    <!-- cada tag é lida de acordo com o fluxo -->
     <p>
-        <!-- tag pai -->
-        Vou <em>escrever</em> um parágrafo
-        <!-- sublinhar <em> -->
-        <!-- tag filha -->
+        <a href="https://www.google.com">link2</a>
+        linha1<br> <!-- quebra de linha -->
+    <p>linha2</p>
     </p>
-</div>
-<!-- cada tag é lida de acordo com o fluxo -->
-<p>
-    <a href="https://www.google.com">link2</a>
-    linha1<br> <!-- quebra de linha -->
-<p>linha2</p>
-</p>
 
-<!-- Conteúdo do texto e caracteres reservados -->
-<p>
-    teste&nbsp;teste
-    <!-- espaço-->
-    <br>
-    <!-- reservados <>"" & -->
-    &lt; &gt; &amp; &quot; &apos;
-</p>
+    <!-- Conteúdo do texto e caracteres reservados -->
+    <p>
+        teste&nbsp;teste
+        <!-- espaço-->
+        <br>
+        <!-- reservados <>"" & -->
+        &lt; &gt; &amp; &quot; &apos;
+    </p>
 
-<!--table-->
-<table>
+    <!--table-->
+    <table>
 
-    <caption>Pessoas por idade</caption> <!-- descrição da tabela-->
+        <caption>Pessoas por idade</caption> <!-- descrição da tabela-->
 
-    <thead>
-        <!-- Topo da tabela-->
-        <tr>
-            <!-- Table row -->
-            <th>Nome</th>
-            <!--linha-->
-            <th>Idade</th>
-        </tr>
-    </thead>
+        <thead>
+            <!-- Topo da tabela-->
+            <tr>
+                <!-- Table row -->
+                <th>Nome</th>
+                <!--linha-->
+                <th>Idade</th>
+            </tr>
+        </thead>
 
-    <tbody>
-        <!-- corpo da tabela-->
-        <tr>
-            <th>Rodolfo</th>
-            <th>24</th>
-        </tr>
-        <tr>
-            <th>Jenifer</th>
-            <th>22</th>
-        </tr>
-    </tbody>
-    <tfoot>
-        <!-- Rodapé da tabela-->
-        <tr>
-            <td>Desenvolvido por:</td>
-            <td>Rodolfo Fonseca dos Santos</td>
-        </tr>
-    </tfoot>
-</table>
+        <tbody>
+            <!-- corpo da tabela-->
+            <tr>
+                <th>Rodolfo</th>
+                <th>24</th>
+            </tr>
+            <tr>
+                <th>Jenifer</th>
+                <th>22</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <!-- Rodapé da tabela-->
+            <tr>
+                <td>Desenvolvido por:</td>
+                <td>Rodolfo Fonseca dos Santos</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- head é toda a parte que não é visível no navegador, mas serve para configurar a página-->
+</body>
+
+</html>
