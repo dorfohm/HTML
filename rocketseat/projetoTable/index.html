@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption>Produzidos x Vendidos por loja</caption>
+
+        <colgroup> <!--agrupar as colunas-->
+            <col>
+            <col span="2" style="background-color:red"> <!-- col span ocupar duas colunas-->
+            <col span="2" style="background-color:blue">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <th rowspan="2"></th> <!-- ocupar duas linhas-->
+                <th colspan="2" scope="colgroup">Loja 1</th> <!-- ocupar duas colunas-->
+                <th colspan="2" scope="colgroup">Loja 2</th> <!-- scope ajudar a mostrar a acessibilidade-->
+            </tr>
+            <tr>
+                <th scope="col">Produzidos</th> <!-- agrupamento de colunas-->
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Vassouras</th> <!-- agrupamento de linhas--> 
+                <th>10</th>
+                <th>10</th>
+                <th>10</th>
+                <th>10</th>
+            </tr>
+            <tr>
+                <th scope="row">Baldes</th>
+                <th>20</th>
+                <th>20</th>
+                <th>20</th>
+                <th>20</th>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+
+</html>

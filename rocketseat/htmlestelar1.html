@@ -9,14 +9,16 @@
 <div class="teste1" contenteditable="true">
     teste
 </div>
-<div class="teste1" data-edicao1 id="nome1"> <!-- id não se repete o nome, class pode repetir-->
+<div class="teste1" data-edicao1 id="nome1">
+    <!-- id não se repete o nome, class pode repetir-->
 
 </div>
 <div class="teste1" hidden style="color: aqua;">
     asdadad
 </div>
 
-<div tabindex="1">  <!-- tabindex para navegar com tab -->
+<div tabindex="1">
+    <!-- tabindex para navegar com tab -->
     asdadad
 </div>
 <div tabindex="2">
@@ -29,25 +31,62 @@
     teste
 </div>
 
-    <!-- Aninhamento de tags, usar mais de uma tag -->
+<!-- Aninhamento de tags, usar mais de uma tag -->
 <div>
-    <p> <!-- tag pai -->
-        Vou <em>escrever</em> um parágrafo <!-- sublinhar <em> --> <!-- tag filha -->
+    <p>
+        <!-- tag pai -->
+        Vou <em>escrever</em> um parágrafo
+        <!-- sublinhar <em> -->
+        <!-- tag filha -->
     </p>
 </div>
 <!-- cada tag é lida de acordo com o fluxo -->
 <p>
     <a href="https://www.google.com">link2</a>
     linha1<br> <!-- quebra de linha -->
-    <p>linha2</p>
+<p>linha2</p>
 </p>
 
 <!-- Conteúdo do texto e caracteres reservados -->
 <p>
-    teste&nbsp;teste <!-- espaço-->
+    teste&nbsp;teste
+    <!-- espaço-->
     <br>
     <!-- reservados <>"" & -->
     &lt; &gt; &amp; &quot; &apos;
 </p>
 
-<!-- Semântica -->
+<!--table-->
+<table>
+
+    <caption>Pessoas por idade</caption> <!-- descrição da tabela-->
+
+    <thead>
+        <!-- Topo da tabela-->
+        <tr>
+            <!-- Table row -->
+            <th>Nome</th>
+            <!--linha-->
+            <th>Idade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- corpo da tabela-->
+        <tr>
+            <th>Rodolfo</th>
+            <th>24</th>
+        </tr>
+        <tr>
+            <th>Jenifer</th>
+            <th>22</th>
+        </tr>
+    </tbody>
+    <tfoot>
+        <!-- Rodapé da tabela-->
+        <tr>
+            <td>Desenvolvido por:</td>
+            <td>Rodolfo Fonseca dos Santos</td>
+        </tr>
+    </tfoot>
+</table>
