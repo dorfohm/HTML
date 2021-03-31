@@ -1,0 +1,17 @@
+/* comentário */
+* {
+    background-color: rgb(24, 29, 29);
+}
+h1{ /*selector*/
+    color: aqua; /*property / property value */ 
+    font-size: 30;
+}
+h2{
+    color: aqua;
+}
+h3{
+    color:aqua;
+}
+#container {
+    
+}

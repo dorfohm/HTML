@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,6 +11,7 @@
     <link rel="apple-touch-icon" href="https://i.ibb.co/26YQ8PK/158268044-155648513052646-797480901453304633-o.jpg">
     <title>Formulários</title>
 </head>
+
 <body>
     <h1>Aulas sobre formulários Rocketseat</h1>
     <form id="field1" action="" method="GET">
@@ -20,14 +22,22 @@
             <button>Enviar</button>
         </fieldset>
     </form>
-    <fieldset form="field1" name="entrada-contato"> <!--colocar algo em name para identificar-->
+    <fieldset form="field1" name="entrada-contato">
+        <!--colocar algo em name para identificar-->
         <input type="text">
         <label for="">tipo, seu nome</label>
         <legend>Insira um texto ai parça</legend>
     </fieldset>
+    <label for="nome">
+        <!--associar ou identificar uma ou mais entradas de dados-->
+        Nome Completo
+    </label>
+    <input id="nome" type="text">
+    <input type="text">
     <!-- atributos básicos-GET é um método http, caso o action esteja vazio, será enviado para a página atual -->
     <!-- metodo POST, dados ficam escondidos, metodo GET elas aparecem na URL-->
     <!-- Não podemos criar um <form> dentro de outro <form>-->
+        
     <!-- 
     <fieldset>
         -agrupamento de campos que tenham o mesmo propósito
@@ -36,5 +46,24 @@
         -nome do agrupamento
         -primeiro elemento dentro do fieldset
     -->
+
+    <!--button-->
+    <button type="submit">Botão submit</button><!-- fará com que o formulário seja enviado-->
+    <form action="">
+        <label for="">teste de botão reset</label>
+        <input type="text" value="botão de reset">
+        <button type="reset">Botão reset</button><!-- irá limpar o formulário-->
+    </form>
+    <button type="autofocus">Botão que será focado ao entrar na página</button>
+    <button disabled>Botão desativado</button>
+    <button type="submit" form="field1">Linkar a um formulário qualquer</button><!--linkado ao form field1-->
+
+    <!--datalist-->
+    <input type="text" list="lista1" placeholder="Escolha uma opção">
+    <datalist id="lista1">
+        <option a href="http://google.com">google</option>
+    </datalist>
+    
 </body>
+
 </html>
