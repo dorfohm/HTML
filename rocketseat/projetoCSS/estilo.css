@@ -1,0 +1,8 @@
+h1{
+    border: 1px solid red; /* borda da caixa */
+    margin: 20px; /* espaçamento por fora da caixa */
+    padding: 200px; /* espaçamento interno da caixa */
+}
+#botao{
+    color:red;
+}
