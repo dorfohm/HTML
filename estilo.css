@@ -3,6 +3,7 @@
     background-color: rgb(24, 29, 29);
 }
 h1{ /*selector*/
+    font: 30 aqua;
     color: aqua; /*property / property value */ 
     font-size: 30;
 }
@@ -12,8 +13,8 @@ h2{
 h3{
     color:aqua;
 }
-#container { /* id */
-    
+#botao { /* id */
+
 }
 .m-40{ /* class */
 
