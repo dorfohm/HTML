@@ -1,7 +1,8 @@
-var serie = 'Friends'
+var serie = "Friends";
 
-if(true) {
-    serie = 'Game of Thrones'
+if (true) {
+  let serie = "Game of Thrones"
+  console.log(serie)
 }
 
 console.log(serie)
