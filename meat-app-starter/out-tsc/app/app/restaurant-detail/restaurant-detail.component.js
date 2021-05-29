@@ -7,20 +7,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { ActivatedRoute } from "@angular/router";
+import { RestaurantsService } from "../restaurants/restaurants.service";
 var RestaurantDetailComponent = (function () {
-    function RestaurantDetailComponent() {
+    function RestaurantDetailComponent(restaurantsService, route) {
+        this.restaurantsService = restaurantsService;
+        this.route = route;
     }
     RestaurantDetailComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.restaurantsService
+            .restaurantById(this.route.snapshot.params["id"])
+            .subscribe(function (restaurant) { return (_this.restaurant = restaurant); });
     };
     return RestaurantDetailComponent;
 }());
 RestaurantDetailComponent = __decorate([
     Component({
-        selector: 'mt-restaurant-detail',
-        templateUrl: './restaurant-detail.component.html'
+        selector: "mt-restaurant-detail",
+        templateUrl: "./restaurant-detail.component.html",
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [RestaurantsService,
+        ActivatedRoute])
 ], RestaurantDetailComponent);
 export { RestaurantDetailComponent };
 //# sourceMappingURL=restaurant-detail.component.js.map
