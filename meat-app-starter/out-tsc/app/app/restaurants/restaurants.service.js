@@ -27,6 +27,11 @@ var RestaurantsService = (function () {
             .map(function (response) { return response.json(); })
             .catch(ErrorHandler.handleError);
     };
+    RestaurantsService.prototype.reviewsOfRestaurant = function (id) {
+        return this.http.get(MEAT_API + "/restaurants/" + id + "/reviews")
+            .map(function (response) { return response.json(); })
+            .catch(ErrorHandler.handleError);
+    };
     return RestaurantsService;
 }());
 RestaurantsService = __decorate([
