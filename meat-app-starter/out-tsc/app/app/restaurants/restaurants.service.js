@@ -32,6 +32,11 @@ var RestaurantsService = (function () {
             .map(function (response) { return response.json(); })
             .catch(ErrorHandler.handleError);
     };
+    RestaurantsService.prototype.menuOfRestaurant = function (id) {
+        return this.http.get(MEAT_API + "/restaurants/" + id + "/menu")
+            .map(function (response) { return response.json(); })
+            .catch(ErrorHandler.handleError);
+    };
     return RestaurantsService;
 }());
 RestaurantsService = __decorate([
