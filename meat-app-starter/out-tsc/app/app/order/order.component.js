@@ -12,6 +12,7 @@ import { OrderService } from './order.service';
 var OrderComponent = (function () {
     function OrderComponent(orderService) {
         this.orderService = orderService;
+        this.delivery = 8;
         this.paymentOptions = [
             { label: 'Dinheiro', value: 'MON' },
             { label: 'Cartão de Débito', value: 'DEB' },
@@ -19,6 +20,9 @@ var OrderComponent = (function () {
         ];
     }
     OrderComponent.prototype.ngOnInit = function () {
+    };
+    OrderComponent.prototype.itemsValue = function () {
+        return this.orderService.itemsValue();
     };
     OrderComponent.prototype.cartItems = function () {
         return this.orderService.cartItems();

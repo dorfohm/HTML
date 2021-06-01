@@ -13,6 +13,9 @@ var OrderService = (function () {
     function OrderService(cartService) {
         this.cartService = cartService;
     }
+    OrderService.prototype.itemsValue = function () {
+        return this.cartService.total();
+    };
     OrderService.prototype.cartItems = function () {
         return this.cartService.items;
     };
