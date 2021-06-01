@@ -23,6 +23,9 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { OrderComponent } from './order/order.component';
 import {FormsModule} from '@angular/forms';
 import { InputComponent } from 'app/shared/input/input.component';
+import { RadioComponent } from 'app/shared/radio/radio.component';
+import {OrderItemsComponent} from 'app/order/order-items/order-items.component';
+import { OrderService } from './order/order.service';
 
 
 
@@ -41,6 +44,8 @@ import { InputComponent } from 'app/shared/input/input.component';
     ReviewsComponent,
     OrderComponent,
     InputComponent,
+    RadioComponent,
+    OrderItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -48,7 +53,7 @@ import { InputComponent } from 'app/shared/input/input.component';
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [RestaurantsService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [RestaurantsService, ShoppingCartService,OrderService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

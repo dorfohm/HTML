@@ -9,10 +9,19 @@ var ShoppingCartService = (function () {
     ShoppingCartService.prototype.addItem = function (item) {
         var foundItem = this.items.find(function (mItem) { return mItem.menuItem.id === item.id; });
         if (foundItem) {
-            foundItem.quantity = foundItem.quantity + 1;
+            this.increaseQty(foundItem);
         }
         else {
             this.items.push(new CartItem(item));
+        }
+    };
+    ShoppingCartService.prototype.increaseQty = function (item) {
+        item.quantity = item.quantity + 1;
+    };
+    ShoppingCartService.prototype.decreaseQty = function (item) {
+        item.quantity = item.quantity - 1;
+        if (item.quantity === 0) {
+            this.removeItem(item);
         }
     };
     ShoppingCartService.prototype.removeItem = function (item) {
